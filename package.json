@@ -1,0 +1,18 @@
+{
+  "name": "TranslatorJs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "App/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "index.js": "node App/index.js",
+    "index2.js": "node App/index2.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vitalets/google-translate-api": "^3.0.0",
+    "google-translate-cn-api": "^1.0.6"
+  }
+}

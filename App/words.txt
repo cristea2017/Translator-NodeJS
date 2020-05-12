@@ -1,0 +1,11 @@
+{
+  "0": "Mother",
+  "1": "Nice",
+  "2": "Guest",
+  "3": "Top",
+  "4": "Tranding",
+  "5": "Recent",
+  "6": "Share",
+  "7": "Favorites",
+  "8": "Options"
+}
