@@ -1,13 +1,14 @@
 const fs = require("fs");
 
-module.exports = class fileManager {
-
-    readFile = (callBack) => {
-        const d = fs.readFileSync(`App/words.txt`, "utf8");
-        console.log("content of file >>> ", d);
-        const js = JSON.parse(d)
-        console.log(Object.values(js));
-        callBack(Object.values(js))
+class FileManager{
+    
+    readFile(){
+        const fileContent = fs.readFileSync(`App/words.txt`, "utf8");
+        // console.log("content of file \n", fileContent);
+        let json = JSON.parse(fileContent)
+        // console.log('content of json \n',Object.values(json));
+        let values = Object.values(json)
+        return values
     }
 
     createFile = (props, callBack) => {
@@ -20,11 +21,5 @@ module.exports = class fileManager {
     }
 }
 
-// readFile(e => {
 
-// })
-
-// createFile('"a":"v"', e => {
-
-// })
-
+module.exports = FileManager
