@@ -3,40 +3,45 @@
 ## Content :
 
 - [Built With](#built-with)
-- [using git module](#getting-started)
-- [Tutorial(using own request's)](#getting-started)
+- [Install modules](#Install-modules)
+- [Tutorial](#Tutorial)
 
 ## Built With
 
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Programming Language
 - [NodeJs](https://facebook.github.io/react-native/) - Node.js® is a JavaScript runtime
 
-## using git module()
+## Install modules
 
-**1. Install Dependencies:**
-
-this is optional , we try to use , but after multiple request this block ip addres
-
-```
-google-translate-cn-api
-```
+**- Just run command below to install all modules:**
 
 ```
 npm install
 ```
+**1. Install Dependencies:**
 
-## Tutorial(using own request's)
+this can somethimes to block ip addres, this is the reason why i use timeout 500 ms. 
+
+```
+@vitalets/google-translate-api
+```
+
+
+
+## Tutorial
 
 **1. Open file:**
 
 ```
-App/index2js
+App/index.js 
+
+run npm script nodemon index.js
 ```
 
-**2. set words:**
+**2. set words in words.txt file:**
 
 ```
-let words = [
+{
     "COMMUNITY",
     "Stickers",
     "Effect",
@@ -51,21 +56,21 @@ let words = [
     "Share",
     "Favorites",
     "Options",
-  ];
+}
 ```
 
 **3. run script**
 
 ```
-node App/index2.js
+node App/index.js
 ```
 
 **4. get results**
 
 ```
-./translations.json - contain all translation
+need to do | create localizable.json file with translation
 ```
 
 ## !!!! warnings !!!!
 
-Do not request single word , beeter option to send all array at once
+delete previous warns
