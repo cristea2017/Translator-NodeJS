@@ -42,20 +42,7 @@ run npm script nodemon index.js
 
 ```
 {
-    "COMMUNITY",
-    "Stickers",
-    "Effect",
-    "SAVE OPTIONS",
-    "Save",
-    "Publish as Combo",
-    "Applied Filters",
-    "Guest",
-    "Top",
-    "Tranding",
-    "Recent",
-    "Share",
-    "Favorites",
-    "Options",
+  "170": "Inflate"   // key : value
 }
 ```
 
@@ -68,9 +55,5 @@ node App/index.js
 **4. get results**
 
 ```
-need to do | create localizable.json file with translation
+check out translations.js file 
 ```
-
-## !!!! warnings !!!!
-
-delete previous warns
