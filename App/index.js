@@ -7,7 +7,8 @@ console.log('===============Initialized');
 
 // ================= Default
 
-let kLocalization = ["ar", "ca", "cs", "de", "el", "es", "fi", "fr", "he", "hr"]
+let kLocalization = ["ar", "ca", "cs", "de", "el", "es", "fi", "fr", "he", "hr",
+  "it", "ja", "ko", "ms", "no", "pt", "ru", "sv", "tr", "vi", "zh-CN", "zh-TW"]
 let array = []
 let keysArr = []
 let finaldata = []
