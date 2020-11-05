@@ -1,4 +1,4 @@
-const translate = require("@vitalets/google-translate-api");
+const translate = require("@k3rn31p4nic/google-translate-api"); //const translate = require("@vitalets/google-translate-api");
 const fs = require("fs");
 const f = require('./FileManager')
 
@@ -7,8 +7,8 @@ console.log('===============Initialized');
 
 // ================= Default
 
-let kLocalization = ["ar", "ca", "cs", "de", "el", "es", "fi", "fr", "he", "hr",
-  "it", "ja", "ko", "ms", "no", "pt", "ru", "sv", "tr", "vi", "zh-CN", "zh-TW"]
+let kLocalization = ["ar", "ca", "cs", "de", "el", "es", "fi", "fr", "iw", "hr",
+  "it", "ja", "ko", "ms", "no", "pt", "ru", "sv", "tr", "vi", "zh-CN", "zh-TW"] // he = iw = ebraic // k3 api languages require iw for ebraic
 let array = []
 let keysArr = []
 let finaldata = []
