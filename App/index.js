@@ -1,4 +1,4 @@
-const translate = require("@k3rn31p4nic/google-translate-api"); //const translate = require("@vitalets/google-translate-api");
+const translate = require('@vitalets/google-translate-api'); //const translate = require("@vitalets/google-translate-api");
 const fs = require("fs");
 const f = require('./FileManager')
 
@@ -71,7 +71,7 @@ function waitAndDo(times, arr) {
       .catch((err) => {
         console.error(err);
       });
-  }, 500);
+  }, 2000);
 }
 
 // =======MAIN
