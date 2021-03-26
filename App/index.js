@@ -2,7 +2,7 @@ const translate = require('@vitalets/google-translate-api'); //const translate =
 const fs = require("fs");
 const f = require('./FileManager')
 
-
+// if you run nodemon from npm scrips | code will loop because of fs.write to file || in app dir was maded changes
 console.log('===============Initialized');
 
 // ================= Default
@@ -39,31 +39,22 @@ function waitAndDo(times, arr) {
       .then((res) => {
         console.log('Translated >>>', res.text);
         tempTranslated.push(`"${keysArr[times]}" : "${res.text}"`)
-        waitAndDo(times - 1);
-        console.log('Finish Loop', times);
+
         if (times == 0) {
           finaldata.push(`\n//================== ${toLang} \n`)
           finaldata.push(tempTranslated)
 
-          console.log('Finish Loop last', times);
-          console.log('Translated >>>', tempTranslated);
           tempTranslated = []
 
           if (langIndex == kLocalization.length - 1) {
-            console.log('======== LAST TRANSLATION LANG =========')
-            console.log(finaldata);
-            const string = `{
-         ${finaldata}
-        }`
-            fs.writeFileSync("./translations.json", string, "utf8");
-
+            writeToFile(finaldata)
           } else {
             langIndex += 1
             toLang = kLocalization[langIndex]
             waitAndDo(array.length - 1);
-            console.log('Translate new lang', kLocalization, toLang, langIndex);
           }
-
+        } else {
+          waitAndDo(times - 1)
         }
         // console.log(res.from.language.iso);
         //=> nl
@@ -73,6 +64,17 @@ function waitAndDo(times, arr) {
       });
   }, 2000);
 }
+
+
+writeToFile = (finaldata) => {
+  console.log('======== LAST TRANSLATION LANG =========')
+  console.log(finaldata);
+  const string = `{
+         ${finaldata}
+        }`
+  fs.writeFileSync("./translations.json", string, "utf8");
+}
+
 
 // =======MAIN
 mainFunc()

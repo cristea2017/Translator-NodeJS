@@ -1,16 +1,4 @@
   {
-    "250":"Generate For Climates",
-  "242": "Mutated Transformation",
-  "243": "Shore Transformation",
-  "244": "River Transformation",
-  "246": "Hills Transformation",
-  "245": "type",
-  "238": "Blue Ash",
-  "239": "Red Ash",
-  "240": "Black Ash",
-  "241": "White Ash",
-
-  "237": "Sea Material",
-  "236": "Climate Downfall",
-  "235": "Pick Collision Height"
+ "251": "Air Fog",
+  "253": "Weather Fog"
   }
