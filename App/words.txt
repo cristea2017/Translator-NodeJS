@@ -1,4 +1,0 @@
-  {
- "251": "Air Fog",
-  "253": "Weather Fog"
-  }
