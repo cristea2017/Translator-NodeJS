@@ -18,27 +18,18 @@
 ```
 npm install
 ```
-**1. Install Dependencies:**
+**- Dependencies used:**
 
-this can somethimes to block ip addres, this is the reason why i use timeout 500 ms. 
+this can somethimes to block ip addres, this is the reason why i use timeout 2000 ms. 
 
 ```
 @vitalets/google-translate-api
 ```
 
 
-
 ## Tutorial
 
-**1. Open file:**
-
-```
-App/index.js 
-
-run npm script nodemon index.js
-```
-
-**2. set words in words.txt file:**
+**1. set words in words.json file:**
 
 ```
 {
@@ -49,11 +40,18 @@ run npm script nodemon index.js
 **3. run script**
 
 ```
-node App/index.js
+node App/index.js 
+
+----- or you can use nodemon -----
+
+nodemon ./App/index.js
+
 ```
 
 **4. get results**
 
 ```
-check out translations.js file 
+check out translations.json file 
 ```
+
+A - Automatization 
